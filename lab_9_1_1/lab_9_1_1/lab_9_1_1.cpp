@@ -4,7 +4,7 @@
 #include <Windows.h> // забезпечення відображення кирилиці
 using namespace std;
 
-enum Specialnist { KN, ME, IF, FI, TN };
+enum Specialnist { KN, ME, IF, FI, TN }; // перелік спеціальностей
 string specialnistList[] = { "комп науки", "мат і економ", "інформ", "фіз і інформ", "труд навч"};
 struct Student
 {
@@ -29,7 +29,7 @@ int main()
 	SetConsoleOutputCP(1251); // встановлення сторінки win-cp1251 в потік виводу
 	int N;
 	cout << "Введіть кількість студентів: "; cin >> N;
-	Student* p = new Student[N];
+	Student* p = new Student[N]; // створення посилання на об`єкт типу Student
 	Create(p, N);
 	Print(p, N);
 	int vidm = Search(p, N);
@@ -97,7 +97,7 @@ void Create(Student* p, const int N)
 			cout << endl;
 			spec = 0;
 		}
-		p[i].spec = (Specialnist)spec;
+		p[i].spec = (Specialnist)spec; // присвоєння спеціальності, введенної користувачем через перелік
 		switch (p[i].spec)
 		{
 		case KN:

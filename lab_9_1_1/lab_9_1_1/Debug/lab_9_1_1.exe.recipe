@@ -2,6 +2,9 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
+      <FullPath>C:\Users\Arsen\source\repos\lab_9_1_1\Debug\UnitTest.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
       <FullPath>C:\Users\Arsen\source\repos\lab_9_1_1\Debug\lab_9_1_1.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
